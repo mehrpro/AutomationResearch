@@ -1,0 +1,55 @@
+﻿@model IEnumerable<AutomationResearch.ViewModels.Admin.RegisterViewModel>
+@{
+    ViewData["Title"] = "فهرست کاربران";
+    int counter = 1;
+}
+
+<h2>فهرست کاربران</h2>
+<hr />
+
+<div class="panel panel-body">
+    <a class="btn btn-primary" asp-action="AddUser">
+        <i class="icon-plus2"></i>
+        افزودن کاربر جدید
+    </a>
+</div>
+<br />
+@if (Model.Count() > 0)
+{
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>ردیف</th>
+                    <th>نام کاربری</th>
+                    <th>ایمیل</th>
+                    <th>نام شخص</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@counter</td>
+                        <td>@Html.DisplayFor(x => item.UserName)</td>
+                        <td>@Html.DisplayFor(x => item.Email)</td>
+                        <td>@Html.DisplayFor(x => item.FName)&nbsp;@Html.DisplayFor(x => item.LName)</td>
+                        <td>
+                            <a asp-action="EditUser" asp-controller="UserManager" asp-route-id="@item.UserId">مشخصات</a>
+                        </td>
+                    </tr>
+                    counter++;
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <div class="row">
+        <div class=" text-center text-danger col-12">
+            <h4>هیچ کاربری در سامانه ثبت نگردیده است</h4>
+        </div>
+    </div>
+}

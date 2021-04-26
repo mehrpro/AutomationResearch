@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomationResearch", "AutomationResearch\AutomationResearch.csproj", "{F4227C42-3627-4018-921D-764097B2AEA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4227C42-3627-4018-921D-764097B2AEA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4227C42-3627-4018-921D-764097B2AEA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4227C42-3627-4018-921D-764097B2AEA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4227C42-3627-4018-921D-764097B2AEA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D49A512B-125E-487D-9FAF-6BA951DD424A}
+	EndGlobalSection
+EndGlobal
